@@ -1,13 +1,13 @@
 from fastapi import FastAPI
 
-from database import supabase
-from login import router as login_router
-from rooms import router as rooms_router
-from tenants import router as tenants_router
-from payments import router as payments_router
-from complaints import router as complaints_router
-from dashboard import router as dashboard_router
-from tenant import router as tenant_router
+from app.database import supabase
+from app.login import router as login_router
+from app.rooms import router as rooms_router
+from app.tenants import router as tenants_router
+from app.payments import router as payments_router
+from app.complaints import router as complaints_router
+from app.dashboard import router as dashboard_router
+from app.tenant import router as tenant_router
 
 app = FastAPI(
     title="StayEase API",

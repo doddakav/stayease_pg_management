@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from database import supabase
+from app.database import supabase
 from datetime import date
 
 router = APIRouter()
